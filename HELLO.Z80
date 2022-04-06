@@ -1,0 +1,11 @@
+; Test program for Z80 retro
+
+	ORG 100H
+
+	LD DE, MSG
+	LD C, 9
+	CALL 0005H
+	RET
+
+MSG:	DB "Welcome to the Retro Z80", 0DH, 0AH
+	DB "A production of Fluffy Electronic Labs and Moth Makes Ltd.", 0DH, 0AH, "$"
